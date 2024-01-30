@@ -14,7 +14,7 @@ definePageMeta({
 });
 
 // Fetch Products
-const { data: products } = await useFetch(baseURL);
+const { data: products } = await useFetch(baseURL + "/products");
 </script>
 
 <style lang="scss" scoped></style>
