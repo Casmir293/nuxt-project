@@ -11,12 +11,19 @@
 <script setup>
 import { baseURL } from "../../services/baseURL";
 
+// Layout Template
 definePageMeta({
   layout: "products",
 });
 
 // Fetch Products
 const { data: products } = await useFetch(baseURL + "/products");
+
+// This useHead is used to give title and metatags on a specific page
+useHead({
+  title: "Solo Store | Products",
+  meta: [{ name: "description", content: "Solo Store Products" }],
+});
 </script>
 
 <style lang="scss" scoped></style>

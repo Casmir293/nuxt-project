@@ -8,4 +8,18 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  app: {
+    head: {
+      title: "Solo Store",
+      meta: [
+        { name: "description", content: "Everything you need in one place" },
+      ],
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+        },
+      ],
+    },
+  },
 });

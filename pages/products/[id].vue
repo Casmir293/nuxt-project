@@ -1,5 +1,11 @@
 <template>
   <div>
+    <!-- This head tag is another way that is used to give title and metatags on a specific page -->
+    <Head>
+      <Title>Solo Store | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description" />
+    </Head>
+
     <ProductDetails :product="product" />
   </div>
 </template>
